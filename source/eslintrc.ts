@@ -51,7 +51,12 @@ module.exports = {
 
     // require default case in switch statements
     // https://eslint.org/docs/rules/default-case
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': [
+      'error',
+      {
+        commentPattern: '^no default$',
+      },
+    ],
 
     // Enforce default clauses in switch statements to be last
     // https://eslint.org/docs/rules/default-case-last
@@ -62,7 +67,12 @@ module.exports = {
 
     // encourages use of dot notation whenever possible
     // https://eslint.org/docs/rules/dot-notation
-    'dot-notation': ['error', { allowKeywords: true }],
+    'dot-notation': [
+      'error',
+      {
+        allowKeywords: true,
+      },
+    ],
 
     // enforces consistent newlines before or after dots
     // https://eslint.org/docs/rules/dot-location
@@ -70,7 +80,13 @@ module.exports = {
 
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
-    eqeqeq: ['error', 'always', { null: 'ignore' }],
+    eqeqeq: [
+      'error',
+      'always',
+      {
+        null: 'ignore',
+      },
+    ],
 
     // Require grouped accessor pairs in object literals and classes
     // https://eslint.org/docs/rules/grouped-accessor-pairs
@@ -106,7 +122,12 @@ module.exports = {
 
     // disallow else after a return in an if
     // https://eslint.org/docs/rules/no-else-return
-    'no-else-return': ['error', { allowElseIf: false }],
+    'no-else-return': [
+      'error',
+      {
+        allowElseIf: false,
+      },
+    ],
 
     // disallow empty functions, except for standalone funcs/arrows
     // https://eslint.org/docs/rules/no-empty-function
@@ -452,7 +473,13 @@ module.exports = {
 
     // require immediate function invocation to be wrapped in parentheses
     // https://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    'wrap-iife': [
+      'error',
+      'outside',
+      {
+        functionPrototypeMethods: false,
+      },
+    ],
 
     // require or disallow Yoda conditions
     // https://eslint.org/docs/rules/yoda
@@ -464,7 +491,12 @@ module.exports = {
 
     // Enforces that a return statement is present in property getters
     // https://eslint.org/docs/rules/getter-return
-    'getter-return': ['error', { allowImplicit: true }],
+    'getter-return': [
+      'error',
+      {
+        allowImplicit: true,
+      },
+    ],
 
     // disallow using an async function as a Promise executor
     // https://eslint.org/docs/rules/no-async-promise-executor
@@ -928,10 +960,7 @@ module.exports = {
 
     // No Node.js builtin modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
-    // TODO: enable?
     'import/no-nodejs-modules': 'off',
-
-    // Style guide:
 
     // disallow non-import statements appearing before import statements
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
@@ -1280,8 +1309,14 @@ module.exports = {
 
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)
-    'id-length': 'off',
-
+    'id-length': [
+      'error',
+      {
+        min: 2,
+        max: 30,
+        exceptions: ['i'],
+      },
+    ],
     // require identifiers to match the provided regular expression
     'id-match': 'off',
 
