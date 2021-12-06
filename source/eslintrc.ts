@@ -1301,7 +1301,7 @@ module.exports = {
 
     // require line breaks inside function parentheses if there are line breaks between parameters
     // https://eslint.org/docs/rules/function-paren-newline
-    'function-paren-newline': ['error', 'multiline-arguments'],
+    'function-paren-newline': 'off',
 
     // disallow specified identifiers
     // https://eslint.org/docs/rules/id-denylist
