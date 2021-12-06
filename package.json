@@ -1,6 +1,6 @@
 {
   "name": "@hulanbv/eslint-config",
-  "description": "Packages containing the Hulan Global ESLint Config.",
+  "description": "This repository the global ESLint Configuration for all Hulan projects.",
   "author": "Hulan BV.",
   "version": "1.3.0",
   "private": false,
