@@ -1,6 +1,6 @@
 # Hulan ESLint Config Package
 
-This repository the global ESLint Configuration for all Hulan projects.
+This package contains Hulan's global ESLint Configuration.
 
 ## Installation
 
