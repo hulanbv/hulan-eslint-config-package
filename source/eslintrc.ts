@@ -1312,9 +1312,9 @@ module.exports = {
     'id-length': [
       'error',
       {
-        min: 3,
+        min: 2,
         max: 30,
-        exceptions: ['i', 'id'],
+        exceptions: ['i'],
       },
     ],
     // require identifiers to match the provided regular expression
