@@ -1,6 +1,12 @@
 module.exports = {
   // Extending other Config Files
-  extends: [],
+  extends: [
+    // Extending the recommended eslint config
+    'eslint:recommended',
+    // Extending the recommended typescript config
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
 
   // The ESLint settings.
   settings: {
