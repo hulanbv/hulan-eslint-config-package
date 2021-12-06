@@ -1,6 +1,6 @@
 # Hulan ESLint Config Package
 
-This repository contains typings such as interfaces and enums for Hulan ESLint Config.
+This repository the global ESLint Configuration for all Hulan projects.
 
 ## Installation
 
