@@ -20,6 +20,12 @@ module.exports = {
     },
   },
 
+  // Variabels and namespaces which should be available globally.
+  globals: {
+    // The JSX namespace is available as a readonly variable to provide Element types for React.
+    JSX: true,
+  },
+
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
     // enforces getter/setter pairs in objects
