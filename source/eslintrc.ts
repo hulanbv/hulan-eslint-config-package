@@ -792,7 +792,7 @@ module.exports = {
     'prefer-arrow-callback': [
       'error',
       {
-        allowNamedFunctions: false,
+        allowNamedFunctions: true,
         allowUnboundThis: true,
       },
     ],
