@@ -1936,5 +1936,9 @@ module.exports = {
 
     // This rule extends the base eslint/no-unused-vars rule. It adds support for TypeScript features, such as types.
     '@typescript-eslint/no-unused-vars': 'error',
+
+    // Explicit types for function return values and arguments makes it clear to any calling code what is the module boundary's input and output.
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };
