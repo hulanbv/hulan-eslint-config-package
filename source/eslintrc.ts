@@ -1882,14 +1882,7 @@ module.exports = {
     'no-undefined': 'error',
 
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true,
-      },
-    ],
+    'no-unused-vars': 'off',
 
     // disallow use of variables before they are defined
     'no-use-before-define': [
