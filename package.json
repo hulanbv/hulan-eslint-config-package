@@ -2,7 +2,7 @@
   "name": "@hulanbv/eslint-config",
   "description": "This repository the global ESLint Configuration for all Hulan projects.",
   "author": "Hulan BV.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": false,
   "main": "distribution/eslintrc.js",
   "types": "distribution/eslintrc.d.ts",
