@@ -1933,5 +1933,8 @@ module.exports = {
 
     // prefer usage of as const over literal type
     '@typescript-eslint/prefer-as-const': 'error',
+
+    // This rule extends the base eslint/no-unused-vars rule. It adds support for TypeScript features, such as types.
+    '@typescript-eslint/no-unused-vars': 'error',
   },
 };
