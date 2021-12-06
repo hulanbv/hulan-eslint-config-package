@@ -1,0 +1,18 @@
+{
+  "name": "@hulanbv/eslint-config",
+  "description": "Packages containing the Hulan Global ESLint Config.",
+  "author": "Hulan BV.",
+  "version": "1.0.0",
+  "private": false,
+  "main": "distribution/eslintrc.js",
+  "types": "distribution/eslintrc.d.ts",
+  "scripts": {
+    "test": "npm run build",
+    "build": "tsc",
+    "prepublishOnly": "echo \"Package should be published using GitHub actions, push a tag instead.\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "typescript": "4.3.5"
+  }
+}

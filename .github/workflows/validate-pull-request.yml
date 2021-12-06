@@ -1,0 +1,37 @@
+# AANDACHT # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# De workflow configuratie is verantwoordelijk voor de deployment en validatie
+# van deze repository. Het is NIET TOEGESTAAN deze bestanden aan te passen, te
+# verwijderen of te verplaatsen. Voor vragen raadpleeg @Jeffrey op Slack. Bvd.
+
+name: Validate Pull Request
+
+on:
+  - pull_request
+
+jobs:
+  main:
+    name: Validate Pull Request
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org
+
+      - name: Cache Node Module Dependencies
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: nodemodules-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Source
+        run: npm run build
