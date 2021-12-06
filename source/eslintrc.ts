@@ -1,6 +1,6 @@
 module.exports = {
-  // Extend default react-app config.
-  extends: ['react-app'],
+  // Extending other Config Files
+  extends: [],
 
   // The ESLint settings.
   settings: {
