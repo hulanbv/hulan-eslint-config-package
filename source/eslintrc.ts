@@ -1326,7 +1326,7 @@ module.exports = {
       {
         min: 2,
         max: 30,
-        exceptions: ['i'],
+        exceptions: ['i', 'a', 'b', 'x', 'y', 'z', 'w'],
       },
     ],
     // require identifiers to match the provided regular expression
@@ -1945,7 +1945,6 @@ module.exports = {
 
     // Explicit types for function return values and arguments makes it clear to any calling code what is the module boundary's input and output.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
-    // TODO - enable this rule?
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'warn',
   },
 };
