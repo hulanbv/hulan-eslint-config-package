@@ -4,13 +4,27 @@ This package contains Hulan's global ESLint Configuration.
 
 ## Installation
 
+To use the ESLint configuration, install this package to your project using the following command:
+
+```sh
+$ npm install --save-dev @hulanbv/eslint-config
+```
+
+Then add the following to your `.eslintrc` file for **React** projects:
+
+```json
+{
+  "extends": ["react-app", "@hulanbv/eslint-config"]
+}
+```
+
+## Development Usage
+
 Install the packages using the Node Package Manager.
 
 ```sh
 $ npm install
 ```
-
-## Development Usage
 
 To use the package during development, create an archive using the pack command and install the packages manually in your project.
 
