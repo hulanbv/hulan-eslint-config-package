@@ -1,11 +1,13 @@
 module.exports = {
-  // Extending other Config Files
+  // Extending other Config Files.
   extends: [
-    // Extending the recommended eslint config
+    // Extending the recommended eslint config.
     'eslint:recommended',
-    // Extending the recommended typescript config
+    // Extending the recommended typescript config.
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    // Extending the recommended eslint-comments config.
+    'plugin:eslint-comments/recommended',
   ],
 
   // The ESLint settings.
@@ -1903,5 +1905,14 @@ module.exports = {
     // Explicit types for function return values and arguments makes it clear to any calling code what is the module boundary's input and output.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': 'warn',
+
+    // Requires directive comments to have a description.
+    // https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/require-description.html
+    'eslint-comments/require-description': [
+      'error',
+      {
+        ignore: [],
+      },
+    ],
   },
 };
