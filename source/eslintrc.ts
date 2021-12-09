@@ -1407,14 +1407,17 @@ module.exports = {
     // https://eslint.org/docs/rules/max-len
     'max-len': [
       'error',
-      100,
-      2,
       {
+        code: 80,
+        tabWidth: 2,
+        comments: 160,
+        ignorePattern: true,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
         ignoreUrls: true,
-        ignoreComments: false,
-        ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
       },
     ],
 
