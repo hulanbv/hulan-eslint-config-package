@@ -1411,7 +1411,6 @@ module.exports = {
         code: 80,
         tabWidth: 2,
         comments: 160,
-        ignorePattern: true,
         ignoreComments: true,
         ignoreTrailingComments: true,
         ignoreUrls: true,
