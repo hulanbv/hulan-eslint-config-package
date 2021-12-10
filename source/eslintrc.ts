@@ -1658,6 +1658,7 @@ module.exports = {
 
     // Requires operator at the beginning of the line in multiline statements
     // https://eslint.org/docs/rules/operator-linebreak
+    // HACK this is disabled since prettier takes care of this.
     'operator-linebreak': 'off',
 
     // disallow padding within blocks
