@@ -1909,6 +1909,18 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': 'warn',
 
+    // Enforce naming conventions for all types, interfaces, classes and variables.
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'variable',
+        types: ['boolean'],
+        format: ['PascalCase'],
+        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+      },
+    ],
+
     // Requires directive comments to have a description.
     // https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/require-description.html
     'eslint-comments/require-description': [
