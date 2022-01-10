@@ -28,6 +28,9 @@ module.exports = {
     JSX: true,
   },
 
+  // Apply the ESLint Parser which is required for some of the rules.
+  parser: '@typescript-eslint/parser',
+
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
     // enforces getter/setter pairs in objects
