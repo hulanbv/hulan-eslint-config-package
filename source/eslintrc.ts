@@ -1949,7 +1949,7 @@ module.exports = {
         selector: 'objectLiteralProperty',
         format: ['camelCase'],
         filter: {
-          regex: '(_id,__v)',
+          regex: '^(_id|__v)$',
           match: false,
         },
       },
