@@ -1944,16 +1944,14 @@ module.exports = {
         selector: 'classProperty',
         format: ['camelCase'],
       },
-      // Any object literal property must be named with a camelCase style, leading underscores are allowed.
+      // Any object literal property must be named with a camelCase style, making an exception for a severel names.
       {
         selector: 'objectLiteralProperty',
         format: ['camelCase'],
-        leadingUnderscore: 'allow',
-      },
-      // Any matches any object type property must be named with a PascalCase style.
-      {
-        selector: 'objectLiteralProperty',
-        format: ['PascalCase'],
+        filter: {
+          regex: '(_id,__v)',
+          match: false,
+        },
       },
       // Any parameter property must be named with a camelCase style.
       {
