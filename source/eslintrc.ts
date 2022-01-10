@@ -1916,11 +1916,99 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
     '@typescript-eslint/naming-convention': [
       'error',
+      // Any variable must be named with a camelCase style.
+      {
+        selector: 'variable',
+        format: ['camelCase'],
+      },
+      // Any boolean variable must be named with a camelCase style starting with a questionable prefix.
       {
         selector: 'variable',
         types: ['boolean'],
         format: ['PascalCase'],
         prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+      },
+      // Any any named function declaration or named function expression must be named with a camelCase style.
+      // TODO -- Disabled due to React functions being named with PascalCase
+      // {
+      //   selector: 'function',
+      //   format: ['camelCase'],
+      // },
+      // Any function parameter must be named with a camelCase style.
+      {
+        selector: 'parameter',
+        format: ['camelCase'],
+      },
+      // Any class property must be named with a camelCase style.
+      {
+        selector: 'classProperty',
+        format: ['camelCase'],
+      },
+      // Any object literal property must be named with a camelCase style.
+      {
+        selector: 'objectLiteralProperty',
+        format: ['camelCase'],
+      },
+      // Any matches any object type property must be named with a PascalCase style.
+      {
+        selector: 'objectLiteralProperty',
+        format: ['PascalCase'],
+      },
+      // Any parameter property must be named with a camelCase style.
+      {
+        selector: 'parameterProperty',
+        format: ['camelCase'],
+      },
+      // Any class Method must be named with a camelCase style.
+      {
+        selector: 'classMethod',
+        format: ['camelCase'],
+      },
+      // Any object literal method must be named with a camelCase style.
+      {
+        selector: 'objectLiteralMethod',
+        format: ['camelCase'],
+      },
+      // Any object type method must be named with a camelCase style.
+      {
+        selector: 'typeMethod',
+        format: ['camelCase'],
+      },
+      // Any accessor must be named with a camelCase style.
+      {
+        selector: 'accessor',
+        format: ['camelCase'],
+      },
+      // Any enum member must be named with a UPPER_CASE style.
+      {
+        selector: 'enumMember',
+        format: ['UPPER_CASE'],
+      },
+      // Any class must be named with a PascalCase style.
+      {
+        selector: 'class',
+        format: ['PascalCase'],
+      },
+      // Any interface must be named with a camelCase style starting with an I.
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        prefix: ['I'],
+      },
+      // Any type alias must be named with a PascalCase style.
+      {
+        selector: 'typeAlias',
+        format: ['PascalCase'],
+      },
+      // Any enum must be named with a PascalCase style.
+      {
+        selector: 'enum',
+        format: ['PascalCase'],
+      },
+      // Any type parameter must be named with a PascalCase style.
+      {
+        selector: 'typeParameter',
+        format: ['PascalCase'],
       },
     ],
 
