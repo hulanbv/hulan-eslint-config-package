@@ -1917,10 +1917,11 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       // Any variable must be named with a camelCase style.
-      {
-        selector: 'variable',
-        format: ['camelCase'],
-      },
+      // TODO -- Disabled due to React functional components being named with PascalCase
+      // {
+      //   selector: 'variable',
+      //   format: ['camelCase'],
+      // },
       // Any boolean variable must be named with a camelCase style starting with a questionable prefix.
       {
         selector: 'variable',
@@ -1929,7 +1930,7 @@ module.exports = {
         prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
       },
       // Any any named function declaration or named function expression must be named with a camelCase style.
-      // TODO -- Disabled due to React functions being named with PascalCase
+      // TODO -- Disabled due to React functional components being named with PascalCase
       // {
       //   selector: 'function',
       //   format: ['camelCase'],
