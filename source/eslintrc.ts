@@ -2020,5 +2020,9 @@ module.exports = {
         ignore: [],
       },
     ],
+
+    // Adds an ESLint rule to enforce kebab case for filename conventions for
+    // linted files.
+    'filename-rules/match': ['error', 'kebab-case'],
   },
 };
