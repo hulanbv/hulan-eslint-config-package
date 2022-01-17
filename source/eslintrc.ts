@@ -554,12 +554,7 @@ module.exports = {
     'no-duplicate-case': 'error',
 
     // disallow empty statements except in certain code blocks
-    'no-empty': [
-      'error',
-      {
-        allowEmptyCatch: true,
-      },
-    ],
+    'no-empty': ['warn'],
 
     // disallow the use of empty character classes in regular expressions
     'no-empty-character-class': 'error',
