@@ -31,6 +31,9 @@ module.exports = {
   // Apply the ESLint Parser which is required for some of the rules.
   parser: '@typescript-eslint/parser',
 
+  // The plugins used in this config.
+  plugins: ['filename-rules'],
+
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
     // enforces getter/setter pairs in objects
@@ -2023,6 +2026,6 @@ module.exports = {
 
     // Adds an ESLint rule to enforce kebab case with periods for filename
     // conventions for linted files.
-    'filename-rules/match': ['error', /^([a-z]+-)*[a-z]+(?:\..*)?$/],
+    'filename-rules/match': ['error', 'kebab-case'],
   },
 };
