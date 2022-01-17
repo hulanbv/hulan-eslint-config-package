@@ -149,14 +149,9 @@ module.exports = {
       },
     ],
 
-    // disallow empty functions, except for standalone funcs/arrows
+    // disallow empty functions
     // https://eslint.org/docs/rules/no-empty-function
-    'no-empty-function': [
-      'error',
-      {
-        allow: ['arrowFunctions', 'functions', 'methods'],
-      },
-    ],
+    'no-empty-function': 'error',
 
     // disallow empty destructuring patterns
     // https://eslint.org/docs/rules/no-empty-pattern
@@ -558,8 +553,13 @@ module.exports = {
     // disallow a duplicate case label.
     'no-duplicate-case': 'error',
 
-    // disallow empty statements
-    'no-empty': 'error',
+    // disallow empty statements except in certain code blocks
+    'no-empty': [
+      'error',
+      {
+        allowEmptyCatch: true,
+      },
+    ],
 
     // disallow the use of empty character classes in regular expressions
     'no-empty-character-class': 'error',
