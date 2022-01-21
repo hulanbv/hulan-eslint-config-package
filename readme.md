@@ -14,7 +14,10 @@ Then add the following to your `.eslintrc` file for **React** projects:
 
 ```json
 {
-  "extends": ["react-app", "@hulanbv/eslint-config"]
+  "extends": ["react-app", "@hulanbv/eslint-config"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```
 
