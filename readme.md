@@ -1,6 +1,6 @@
 # Hulan ESLint Config Package
 
-This package contains Hulan's global ESLint Configuration.
+Hulan's very own portable and shareable ESLint configuration for complete and streamlined TypeScript codestyling standards.
 
 ## Installation
 
