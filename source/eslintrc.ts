@@ -32,7 +32,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
 
   // The plugins used in this config.
-  plugins: ['filenames'],
+  plugins: ['filenames', 'import'],
 
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
@@ -2020,7 +2020,7 @@ module.exports = {
     ],
 
     // Enforce kebab case for filename conventions for linted files.
-    'filenames/match-regex': ['error', 'kebab-case'],
+    'filenames/match-regex': ['error', /^([a-z]+-)*[a-z]+(?:\..*)?$/],
 
     // Disallow the use of index files.
     'filenames/no-index': 'error',
