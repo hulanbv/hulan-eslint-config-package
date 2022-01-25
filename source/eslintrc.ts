@@ -55,7 +55,7 @@ module.exports = {
 
     // specify the maximum cyclomatic complexity allowed in a program
     // https://eslint.org/docs/rules/complexity
-    complexity: ['off', 20],
+    complexity: ['error', 10],
 
     // enforce that class methods use "this"
     // https://eslint.org/docs/rules/class-methods-use-this
@@ -1402,7 +1402,7 @@ module.exports = {
     ],
 
     // specify the maximum depth that blocks can be nested
-    'max-depth': ['off', 4],
+    'max-depth': ['error', 4],
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
@@ -1424,7 +1424,7 @@ module.exports = {
     // specify the max number of lines in a file
     // https://eslint.org/docs/rules/max-lines
     'max-lines': [
-      'off',
+      'error',
       {
         max: 300,
         skipBlankLines: true,
@@ -1435,9 +1435,9 @@ module.exports = {
     // enforce a maximum function length
     // https://eslint.org/docs/rules/max-lines-per-function
     'max-lines-per-function': [
-      'off',
+      'error',
       {
-        max: 50,
+        max: 100,
         skipBlankLines: true,
         skipComments: true,
         IIFEs: true,
@@ -1445,7 +1445,7 @@ module.exports = {
     ],
 
     // specify the maximum depth callbacks can be nested
-    'max-nested-callbacks': 'off',
+    'max-nested-callbacks': ['error', 5],
 
     // limits the number of parameters that can be used in the function declaration.
     'max-params': ['off', 3],
