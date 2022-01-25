@@ -1,0 +1,9 @@
+{
+  "name": "@hulanbv/eslint-config-testing",
+  "scripts": {
+    "lint": "eslint --ext .ts src"
+  },
+  "dependencies": {
+    "eslint": "5.16.0"
+  }
+}
