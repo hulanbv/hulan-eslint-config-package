@@ -32,7 +32,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
 
   // The plugins used in this config.
-  plugins: ['filename-rules'],
+  plugins: ['filenames'],
 
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
