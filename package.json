@@ -7,8 +7,8 @@
   "main": "distribution/eslintrc.js",
   "types": "distribution/eslintrc.d.ts",
   "scripts": {
-    "test": "npm run build",
     "build": "tsc",
+    "test": "npm run build && cd testing && npm run lint",
     "prepublishOnly": "echo \"Package should be published using GitHub actions, push a tag instead.\" && exit 1"
   },
   "dependencies": {
