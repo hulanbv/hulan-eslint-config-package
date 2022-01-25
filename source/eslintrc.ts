@@ -2019,8 +2019,10 @@ module.exports = {
       },
     ],
 
-    // Adds an ESLint rule to enforce kebab case with periods for filename
-    // conventions for linted files.
-    'filename-rules/match': ['error', 'kebab-case'],
+    // Enforce kebab case for filename conventions for linted files.
+    'filenames/match-regex': ['error', 'kebab-case'],
+
+    // Disallow the use of index files.
+    'filenames/no-index': 'error',
   },
 };
