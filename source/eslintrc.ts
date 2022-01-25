@@ -2023,6 +2023,7 @@ module.exports = {
     'filenames/match-regex': ['error', /^([a-z]+-)*[a-z]+(?:\..*)?$/],
 
     // Disallow the use of index files.
-    'filenames/no-index': 'error',
+    // TODO -- Create React App requires an index.js as the entry point.
+    // 'filenames/no-index': 'error',
   },
 };
