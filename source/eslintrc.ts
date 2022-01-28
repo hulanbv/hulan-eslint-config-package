@@ -19,6 +19,11 @@ module.exports = {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
+      // Allow importer to import declaration types.
+      // https://github.com/import-js/eslint-plugin-import/issues/1282#issuecomment-600907820
+      typescript: {
+        alwaysTryTypes: true,
+      },
     },
   },
 
