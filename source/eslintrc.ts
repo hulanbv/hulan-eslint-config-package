@@ -60,7 +60,7 @@ module.exports = {
 
     // specify the maximum cyclomatic complexity allowed in a program
     // https://eslint.org/docs/rules/complexity
-    complexity: ['error', 10],
+    complexity: ['error', 15],
 
     // enforce that class methods use "this"
     // https://eslint.org/docs/rules/class-methods-use-this
