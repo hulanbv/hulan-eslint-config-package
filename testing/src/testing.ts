@@ -16,3 +16,6 @@ function IncorrectFunctionName() {
     incorrectVariableName,
   });
 }
+
+const castingIsNotAllowed = 'string' as string;
+const castingIsReallyNotAllowed = <string>'string';
