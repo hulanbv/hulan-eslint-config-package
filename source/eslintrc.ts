@@ -37,7 +37,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
 
   // The plugins used in this config.
-  plugins: ['filenames', 'import'],
+  plugins: ['filenames', 'import', 'no-type-assertion'],
 
   // The ESLint Rules must be applied to all source files in the project.
   rules: {
@@ -2030,5 +2030,8 @@ module.exports = {
     // Disallow the use of index files.
     // TODO -- Create React App requires an index.js as the entry point.
     // 'filenames/no-index': 'error',
+
+    // Disallow the use of type assertions.
+    'no-type-assertion/no-type-assertion': 'error',
   },
 };
